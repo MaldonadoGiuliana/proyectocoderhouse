@@ -2,9 +2,56 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #D9A796;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* Para que la página sea lo suficientemente larga */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 127, 80, 0.267);
+}
+
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    
+}
+
+.parallax {
+    height: 710px;
+    background-image: url('../assets/header2.png'); /* Segunda imagen */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 127, 80, 0.267);
+}
+
+.parallax .content {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: medium;
+}
+
+.ef-parallax{
+    padding: 20px;
+}
+.ef-parallax2{
+    margin: 20px;
+}
+.parallax a{
+    color: white;
+    font-size: 20px;
 }
 .titulo{
     margin-right: 25px;
@@ -27,7 +74,7 @@ button a{
     font-size: 30px;
 }
 .estilo1{
-    margin-top: 50px;
+    margin-top: 35px;
     text-align: center;
     display: flex;
 }
